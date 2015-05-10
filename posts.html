@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>Posts</h1>
+
+<ul>
+	{% for posts in site.categories.recently-discovered limit:2 %}
+	<li>
+		<a href="">{{posts.title}}</a>
+		<p>{{posts.meta}}</p>
+	</li>
+	{% endfor %}
+</ul>
